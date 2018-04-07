@@ -11,4 +11,5 @@ public interface CisiQuestionDao extends MongoRepository<CisiQuestion, Long>
 	public List<CisiQuestion> findAll();
 	public List<CisiQuestion> findByChapter(int chapter);
 	public List<CisiQuestion> findBySection(int section);
+	public List<CisiQuestion> findByChapterAndSectionAndSubSection(Integer chapter, Integer section, Integer subsection);
 }

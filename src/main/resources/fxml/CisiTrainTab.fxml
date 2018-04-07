@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<VBox fx:id="cisiTrainTab" prefHeight="400.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/9.0.4" xmlns:fx="http://javafx.com/fxml/1" fx:controller="de.cisi.qa.controller.CisiTrainTabController">
+   <children>
+  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="398.0" prefWidth="640.0">
+         <children>
+            <Text layoutX="38.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Add a question" />
+            <TextArea fx:id="trainQuestionInput" layoutX="38.0" layoutY="87.0" prefHeight="200.0" prefWidth="200.0" promptText="Put in your question" />
+            <Label layoutX="38.0" layoutY="298.0" text="Chapter.Section" />
+            <TextField fx:id="chapterSection" layoutX="148.0" layoutY="293.0" prefHeight="27.0" prefWidth="89.0" promptText="1.2.3" />
+            <Button fx:id="cisiQuestionSave" layoutX="38.0" layoutY="326.0" mnemonicParsing="false" onAction="#onCisiQuestionSave" text="Save" />
+            <Text layoutX="460.0" layoutY="72.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Latest saved questions" wrappingWidth="142.55322265625" />
+            <ListView fx:id="latestTrainQuestions" layoutX="256.0" layoutY="87.0" prefHeight="200.0" prefWidth="347.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>
